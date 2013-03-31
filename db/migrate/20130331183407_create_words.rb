@@ -3,7 +3,6 @@ class CreateWords < ActiveRecord::Migration
     create_table :words do |t|
       t.string :word
       t.integer :up_votes
-      t.integer :down_votes
 
       t.timestamps
     end

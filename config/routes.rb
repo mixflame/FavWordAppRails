@@ -55,4 +55,10 @@ FavWordApp::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+  match '/favorite_word' => "word#favorite_word"
+  match '/random_word' => "word#random_word"
+  match '/vote_up' => "word#vote_up"
+  match '/vote_down' => "word#vote_down"
+  match '/word_of_the_day' => "word#word_of_the_day"
 end
